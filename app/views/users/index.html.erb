@@ -4,6 +4,8 @@
     <%= file_field_tag :file, accept: 'text/csv' %>
     <%= submit_tag "インポート" %>
   <% end %>
+  <%= link_to "CSV出力", users_path(format: :csv) %>
+
 </div>
 
 <table>
